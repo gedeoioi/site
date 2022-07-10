@@ -50,7 +50,9 @@ section p {
   margin-left: 40px;
   letter-spacing: 2px;
 }
-
+.nav-link:hover {
+  color: #ff4c29;
+}
 .nav-link.active {
   color: #ff4c29 !important;
   font-weight: 700;
@@ -68,8 +70,7 @@ section p {
 }
 
 .hero-tagline {
-  margin-top: 50px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 #hero .social-icon {
@@ -159,6 +160,64 @@ section p {
 }
 /* end portfolio */
 
+/* contact */
+#contact {
+  padding: 20px 0 50px 0;
+  background-color: var(--secondColor);
+}
+
+#contact hr {
+  width: 80%;
+  color: #ff4c29;
+  opacity: 100%;
+  margin: 20px auto;
+}
+/* end contact */
+
+/* footer */
+#footer .container {
+  margin: auto;
+}
+#footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30x auto;
+}
+#footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 0 0 5%;
+  margin-bottom: 30px;
+}
+.footer-col h4 {
+  color: #ff4c29;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-col ul li a:hover {
+  color: #ff4c29;
+  padding-left: 5px;
+  transition: all 0.3s ease;
+}
+.copyright {
+  margin-top: 20px;
+  font-size: 16px;
+  align-content: center;
+}
+.copyright strong {
+  color: #ff4c29;
+}
+/* end footer */
+
 /* responsive desktop */
 @media (max-width: 992px) {
   #portfolio .porto-box {
@@ -180,6 +239,11 @@ section p {
   #portfolio .porto-box {
     margin: 10px;
   }
+  .footer-col {
+    width: 50%;
+    padding: 0 0 0 5%;
+    margin-bottom: 30px;
+  }
 }
 
 /* responsive mobile */
@@ -189,5 +253,10 @@ section p {
   }
   #hero .container h2 {
     font-size: 25;
+  }
+  .footer-col {
+    width: 100%;
+    padding: 0 0 0 5%;
+    margin-bottom: 30px;
   }
 }
