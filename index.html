@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="0">
+  <body>
     <!-- navbar -->
-    <div class="container-fluid fixed-top align-items-center justify-content-between" id="nav">
-      <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid fixed-top align-items-center justify-content-center" id="nav">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <a class="navbar-brand" href="#">My Portfo<span>lio</span></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,16 +22,17 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Portfolio</a>
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link scrollto active" aria-current="page" href="#">Home</a>
+              <a class="nav-link scrollto" href="#about">About</a>
+              <a class="nav-link scrollto" href="#portfolio">Portfolio</a>
+              <a class="nav-link scrollto" href="#contact">Contact</a>
             </div>
           </div>
         </div>
       </nav>
     </div>
-    <!-- end navbar -->
+    <!-- end
+     navbar -->
 
     <!-- hero -->
     <section id="hero">
@@ -88,7 +89,7 @@
 
     <!-- about -->
     <section id="about">
-      <div class="container-fluid" data-aos="fade-up" data-aos-offset="200" data-aos-delay="300" data-aos-duration="1000">
+      <div class="container" data-aos="fade-up" data-aos-offset="200" data-aos-delay="300" data-aos-duration="1000">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-12 text-center">
@@ -97,13 +98,13 @@
             </div>
           </div>
           <div class="row justify-content-center">
-            <div class="col-lg-6 about-tagline text-center" data-aos="fade-up-right" data-aos-offset="200" data-aos-delay="300" data-aos-duration="1000">
+            <div class="col-lg-6 about-tagline text-center" data-aos="zoom-out" data-aos-offset="200" data-aos-delay="300" data-aos-duration="1000">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nulla sequi iure suscipit repellendus maxime error, mollitia amet? Autem repellendus ducimus rerum consectetur illo commodi. Incidunt asperiores quo ab illo
                 perspiciatis dolores ea voluptatibus nam laboriosam illum aliquid, quidem esse vel veritatis labore, quos eos laborum alias iste repudiandae nostrum?
               </p>
             </div>
-            <div class="col-lg-6 about-tagline text-center" data-aos="fade-up-left" data-aos-offset="200" data-aos-delay="400" data-aos-duration="1500">
+            <div class="col-lg-6 about-tagline text-center" data-aos="zoom-out" data-aos-offset="200" data-aos-delay="400" data-aos-duration="1500">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis ratione illo laborum incidunt accusantium quod aperiam, maxime perferendis quis consequuntur ullam error dolor magni cupiditate minima veniam nihil expedita
                 assumenda. Ducimus obcaecati minima explicabo doloribus vero ea repudiandae voluptatem quaerat veritatis. Aliquid, error? Inventore odio labore assumenda, tempore consequatur sit repellat necessitatibus modi saepe alias
@@ -118,7 +119,7 @@
 
     <!-- portfolio -->
     <section id="portfolio">
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-offset="200" data-aos-delay="150" data-aos-duration="1200">
         <div class="row justify-content-center text-center">
           <div class="col-lg-12 text-center">
             <h1>My Portfolio</h1>
@@ -126,28 +127,28 @@
           </div>
         </div>
         <div class="row justify-content-center text-center">
-          <div class="col-lg-3 col-md-6 center-block porto-box">
+          <div class="col-lg-3 col-md-6 center-block porto-box" data-aos="flip-right" data-aos-offset="200" data-aos-delay="300" data-aos-duration="1000">
             <div class="box">
               <img src="img/soon.jpg" style="height: 200px" class="img-fluid" alt="" />
               <p></p>
               <a href="#"><h5>Coming soon</h5></a>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 porto-box">
+          <div class="col-lg-3 col-md-6 porto-box" data-aos="flip-right" data-aos-offset="200" data-aos-delay="300" data-aos-duration="1100">
             <div class="box">
               <img src="img/soon.jpg" style="height: 200px" class="img-fluid" alt="" />
               <p></p>
               <a href="#"><h5>Coming soon</h5></a>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 porto-box">
+          <div class="col-lg-3 col-md-6 porto-box" data-aos="flip-right" data-aos-offset="200" data-aos-delay="400" data-aos-duration="1200">
             <div class="box">
               <img src="img/soon.jpg" style="height: 200px" class="img-fluid" alt="" />
               <p></p>
               <a href="#"><h5>Coming soon</h5></a>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 porto-box">
+          <div class="col-lg-3 col-md-6 porto-box" data-aos="flip-right" data-aos-offset="200" data-aos-delay="500" data-aos-duration="1300">
             <div class="box">
               <img src="img/soon.jpg" style="height: 200px" class="img-fluid" alt="" />
               <p></p>
@@ -161,84 +162,82 @@
 
     <!-- contact -->
     <section id="contact">
-      <div class="container-fluid">
-        <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              <h2>Contact Me</h2>
-              <hr />
-            </div>
+      <!-- <div class="container-fluid"> -->
+      <div class="container" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">
+        <div class="row">
+          <div class="col text-center">
+            <h2>Contact Me</h2>
+            <hr />
           </div>
-          <div class="row justify-content-center gy-4">
-            <div class="col-lg-5">
-              <input type="text" class="form-control" placeholder="Your Name" aria-label="Your Name" />
-            </div>
-            <div class="col-lg-5">
-              <input type="text" class="form-control" placeholder="Your Email" aria-label="Your Email" />
-            </div>
-            <div class="col-lg-10">
-              <input type="text" class="form-control" placeholder="Subject" aria-label="Subject" />
-            </div>
-            <div class="col-lg-10">
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Type your message here..." aria-label="Type your message here..."></textarea>
-            </div>
+        </div>
+        <div class="row justify-content-center gy-4">
+          <div class="col-lg-5">
+            <input type="text" class="form-control" placeholder="Your Name" aria-label="Your Name" />
+          </div>
+          <div class="col-lg-5">
+            <input type="text" class="form-control" placeholder="Your Email" aria-label="Your Email" />
+          </div>
+          <div class="col-lg-10">
+            <input type="text" class="form-control" placeholder="Subject" aria-label="Subject" />
+          </div>
+          <div class="col-lg-10">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Type your message here..." aria-label="Type your message here..."></textarea>
           </div>
         </div>
       </div>
+      <!-- </div> -->
     </section>
     <!-- end contact  -->
 
     <!-- footer -->
-    <section id="footer">
-      <footer>
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="footer-col">
-              <h4>My Portfolio</h4>
-              <ul>
-                <li><a href="#">My Portfolio 1</a></li>
-                <li><a href="#">My Portfolio 2</a></li>
-                <li><a href="#">My Portfolio 3</a></li>
-                <li><a href="#">My Portfolio 4</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Usefull Link</h4>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Partners</h4>
-              <ul>
-                <li><a href="#">Kreasi Cash</a></li>
-                <li><a href="#">Kreasi Tech</a></li>
-                <li><a href="#">Kreasi Design</a></li>
-                <li><a href="#">Kreasi Kita</a></li>
-              </ul>
-            </div>
-
-            <div class="footer-col">
-              <h4>Social Media</h4>
-              <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Whatsapp</a></li>
-                <li><a href="#">Twitter</a></li>
-              </ul>
-            </div>
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="footer-col">
+            <h4>My Portfolio</h4>
+            <ul>
+              <li><a href="#">My Portfolio 1</a></li>
+              <li><a href="#">My Portfolio 2</a></li>
+              <li><a href="#">My Portfolio 3</a></li>
+              <li><a href="#">My Portfolio 4</a></li>
+            </ul>
           </div>
-          <div class="row">
-            <div class="col text-center copyright">
-              <p>© Copyright My Portfolio by <strong>Gede OiOi</strong>. All Rights Reserved</p>
-            </div>
+          <div class="footer-col">
+            <h4>Usefull Link</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Partners</h4>
+            <ul>
+              <li><a href="#">Kreasi Cash</a></li>
+              <li><a href="#">Kreasi Tech</a></li>
+              <li><a href="#">Kreasi Design</a></li>
+              <li><a href="#">Kreasi Kita</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Social Media</h4>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Whatsapp</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
           </div>
         </div>
-      </footer>
-    </section>
+        <div class="row">
+          <div class="col text-center copyright">
+            <p>© Copyright My Portfolio by <strong>Gede OiOi</strong>. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- end footer -->
 
     <script src="js/myjs.js"></script>
