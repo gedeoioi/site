@@ -14,7 +14,7 @@ window.addEventListener("scroll", function () {
 // */
 let navlinks = select("#navbar .scrollto", true);
 const navbarlinksActive = () => {
-  let position = window.scrollY + 100;
+  let position = window.scrollY + 200;
   navlinks.forEach((navlink) => {
     if (!navlink.hash) return;
     let section = select(navlink.hash);
